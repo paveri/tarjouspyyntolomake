@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<link href="css/tarkasta.css" type"text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Expletus+Sans|Gloria+Hallelujah" rel="stylesheet">
+<head>
+    <title></title>
+<script>
+
+	function TARKASTA()
+{
+var etunimi = document.forms["rekisterointilomake"]["etunimi"];
+var sukunimi = document.forms["rekisterointilomake"]["sukunimi"];
+var puhelin = document.forms["rekisterointilomake"]["puhelin"];
+var email = document.forms["rekisterointilomake"]["email"];
+
+
+
+if (etunimi.value == "")
+{
+	window.alert("Ole hyv\u00E4, ja anna etunimesi.");
+	etunimi.focus();
+	return false;
+}
+
+if (sukunimi.value == "")
+{
+	window.alert("Ole hyv\u00E4, ja anna sukunimesi.");
+	sukunimi.focus();
+	return false;
+}
+
+if (lahiosoite.value == "")
+{
+	window.alert("Ole hyv\u00E4, ja anna osoitteesi.");
+	lahiosoite.focus();
+	return false;
+}
+
+if (postinro.value == "")
+{
+	window.alert("Ole hyv\u00E4 ja anna postinumerosi.");
+	postinro.focus();
+	return false;
+}
+
+if (postitoimipaikka.value == "")
+{
+	window.alert("Ole hyv\u00E4 ja anna postitoimipaikkasi.");
+	postitoimipaikka.focus();
+	return false;
+}
+
+if (puhelin.value == "")
+{
+	window.alert("Ole hyv\u00E4 ja anna puhelinnumerosi.");
+	puhelin.focus();
+	return false;
+}
+
+if (email.value == "")
+{
+	window.alert("Ole hyv\u00E4 ja anna s\u00E4hk\u00F6postiosoitteesi.");
+	email.focus();
+	return false;
+}
+
+if (email.value.indexOf("@", 0) < 0)
+{
+	window.alert("Ole hyv\u00E4 ja anna TOIMIVA s\u00E4hk\u00F6postiosoitteesi.");
+	email.focus();
+	return false;
+}
+
+if (email.value.indexOf(".", 0) < 0)
+{
+	window.alert("S\u00E4hk\u00F6postiosoitteessasi pit\u00E4\u00E4 olla v\u00E4hint\u00E4\u00E4n 1 piste");
+	email.focus();
+	return false;
+}
+
+
+if (mita.selectedIndex < 1)
+{
+	alert("Ole hyv\u00E4 ja valitse paras viikko.");
+	mita.focus();
+	return false;
+}
+
+	if (salasana.value == "")
+{
+	window.alert("Ole hyv\u00E4 ja anna salasanasi.");
+	salasana.focus();
+	return false;
+}
+
+
+return true;
+}</script>
+</head>
+<body>
+
+<h1 style="text-align: center"> TARJOUSPYYNTÖ </h1>
+<form name="tarjouspyynto" action="" onsubmit="return TARKASTA()" method="post">
+
+
+<table>
+	<tbody>
+		<tr>
+			<th colspan="2">
+				<h2> Asiakkaan tiedot </h2>
+			</th>
+		</tr>
+		</tr>
+			<td class="otsikot">
+				Etunimi:
+			</td>
+			<td>
+				<input type="text" name="etunimi" id="etunimi" value="" placeholder="Anna etunimi">
+			</td>
+		</tr>
+		<tr>
+			<td class="otsikot">
+				Sukunimi:
+				</td>
+				<td>
+					<input type="text" name="sukunimi" id="sukunimi" value="" placeholder="Anna sukunimi">
+				</td>
+		</tr>
+		<tr>
+			<td class="otsikot">
+				Puhelinnumero:
+				</td>
+				<td>
+
+					<input type="text" name="puhelin" id="puhelin" value="" placeholder="Anna puhelinnumero">
+				</td>
+		</tr>
+		<tr>
+			<td class="otsikot">
+				Sähköpostiosoite:
+				</td>
+				<td>
+					<input type="text" name="email" id="email" value="" placeholder="Anna sähköpostiosoite">
+				</td>
+		</tr>
+		
+		<tr>
+		<td></td>
+			<td><input type="submit" name="submit" value="L&auml;het&auml;" class="nappi"  /></td>
+			
+	</tr>
+
+
+</body>
+</html>
