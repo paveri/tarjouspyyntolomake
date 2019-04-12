@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<head>
+  	<link href="css/tyylitau.css" type="text/css" rel="stylesheet">
+	<title>Taulukko tiedonkeruu !</title>
+</head>
+<style>
+</style>
+<body>
+<table border="1">
+<form>
+<tr>
+	<th colspan="2"><h1> Tiedon keruu !<h1></th>
+</tr>
+<tr>
+	<td class="ots"><h2><b>Nimi:</b></h2></td>
+	<td><input type="text" id="nimi" name="nimi" placeholder="Kirjoita nimesi" size="20"></td>
+	</tr>
+<tr>
+	<td class="ots"><h2><b>S&auml;hk&ouml;posti:</b></h2></td>
+	<td><input type="text" id="email" name="email" placeholder="Kirjoita s&auml;hk&ouml;postisi"></td>
+	</tr>
+<tr>
+	<td class="ots"><h2><b>Sijainti:</b></h2></td>
+	<td><select type="select"" id="sijainti" name="sijainti" class="valitse">
+	   <option value="Helsinki">Helsinki</option>
+	   <option value="Vantaa">Vantaa</option>
+	   <option value="Espoo">Espoo</option>
+       <option value="Lande">Lande</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td class="ots"><h2><b>Sukupuoli:</b></h2></td>
+	<td>
+	   <input type="radio"" id="sukup" name="sukup" value"mies">Mies<br>
+	   <input type="radio"" id="sukup" name="sukup" value"nainen">Nainen<br>
+	   <input type="radio"" id="sukup" name="sukup" value"muu">Muu<br>
+	</td>
+</tr>
+<tr>
+	<td class="ots"><h2><b>Syntym&auml;p&auml;iv&auml;:</b></h2></td>
+	<td>
+	   <input type="date" id="syntaika" name="syntaika" class="valitse">
+	</td>
+</tr>
+<tr>
+	<td class="ots"><h2><b>Arvosana koulutukselle (1-10):</b></h2></td>
+	<td>
+	   <input type="number" class="valitse" id="arvosana" name="arvosana" min="1" max="10" >
+	</td>
+</tr>
+<tr>
+	<td class="ots"><h2><b>Tulen kouluun:</b></h2></td>
+	<td><input type="checkbox"" id="bussi" name="bussi" value="Bussi">Bussilla&nbsp;&nbsp;&nbsp;
+	<input type="checkbox"" id="metro" name="metro" value="Metro">Metrolla</br>
+	 <input type="checkbox"" id="ratikka" name="ratika" value="Ratikka">Ratikalla&nbsp;&nbsp;
+	 <input type="checkbox"" id="pyora" name="pyora" value="Pyora">Py&ouml;r&auml;ll&auml;</br>
+	 <input type="checkbox"" id="juna" name="juna" value="Juna">Junalla&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 	 <input type="checkbox"" id="jalan" name="jalan" value="Jalan">Jalkaisin</br>
+	 <input type="checkbox"" id="auto" name="auto" value="Auto">Autolla&nbsp;&nbsp;&nbsp;&nbsp;
+ 	 <input type="checkbox"" id="muu" name="muu" value="Muu">Muulla tavoin</br>	 
+	 </td>
+</tr>
+    <td class="ots"><h2><b>Lisätoiveet:</b></h2></td>
+    <td><textarea id="komment" name="komment" rows="15" cols="30"></textarea></td>
+</tr>
+<tr>
+    <td class="ots"></td>
+    <td><input type="submit" value="L&auml;het&auml;"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

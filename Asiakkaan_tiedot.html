@@ -6,12 +6,13 @@
     <title></title>
 <script>
 
-	function TARKASTA()
+function TARKASTA()
 {
-var etunimi = document.forms["rekisterointilomake"]["etunimi"];
-var sukunimi = document.forms["rekisterointilomake"]["sukunimi"];
-var puhelin = document.forms["rekisterointilomake"]["puhelin"];
-var email = document.forms["rekisterointilomake"]["email"];
+var etunimi = document.forms["tarjouspyynto"]["etunimi"];
+var nimi = document.forms["tarjouspyynto"]["nimi"];
+var sukunimi = document.forms["tarjouspyynto"]["sukunimi"];
+var puhelin = document.forms["tarjouspyynto"]["puhelin"];
+var email = document.forms["tarjouspyynto"]["email"];
 
 
 
@@ -21,6 +22,15 @@ if (etunimi.value == "")
 	etunimi.focus();
 	return false;
 }
+
+if (nimi.value == "") or (nimi.value.length < 3)
+{
+	window.alert("Ole hyv\u00E4, ja anna nimesi.");
+	nimi.focus();
+	return false;
+}
+
+
 
 if (sukunimi.value == "")
 {
