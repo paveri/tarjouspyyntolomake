@@ -8,14 +8,13 @@ clear: left;
 width: 100px;
 text-align: left;
 margin-right: 10px;
-font-family:Expletus Sans, cursive, Gloria Hallelujah, cursive;
+font-family: Dokdo, cursive, Gloria Hallelujah, cursive;
 font-size:14px;
 }
 
 div {
 box-sizing: border-box;
 width: 100%;
-border: 100px solid black;
 float: left;
 align-content: center;
 align-items: center;
@@ -23,20 +22,30 @@ align-items: center;
 
 form {
 margin: 20px;
-width: 550px;
-background: #e0ebeb;
+width: 600px;
+background: white;
 }
 
 input {
 width: 400px;
+border-radius: 6px;
+padding: 3px;
 }
 
 .no_width {
 width: 50px;
 }
 
-h1, h2 {
-font-family:Expletus Sans, cursive;
+h1 {
+
+font-family: Indie Flower, bold;
+color:#20120b;
+margin: 50px 200px 100px 0;
+} 
+
+h2 {
+font-family:Indie Flower, bold;
+font-color:#20120b;
 }
 
 .otsikot {
@@ -46,5 +55,25 @@ font-family:Gloria Hallelujah, cursive;
 .nappi {
 	width: 405px;
 	height: 30px;
-	margin: 10px 0 20px 0;
+	margin: 20px 0 30px 0;
+	background-color: #e98577;
+}
+
+#lasit {
+	height: 200px;
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+textarea{
+	text-align: left;
+	border-radius: 6px;
+	border:solid
+	color: black
+}
+
+#message{
+	margin: 20px 0 0 0;
+	padding: 10px 30px;
+	float: right;
 }
